@@ -2,6 +2,7 @@
 To Code the Two Challenge Solutions
 I will attempt to get the files uploaded into a src directory
 Challenge#1
+
 Given:
 - 1M Users in a DB of your selection
 - User has the following attributes: {ID, Name, Age, Address 1, Address 2 }
@@ -15,7 +16,9 @@ Deliverable:
 - Fully functional API implemented using Java including source codes
 - A simple Web UI (Angular, React) demonstrating the use cases is a plus but not a must.
 - Source code preferable shared on GitHub.
+
 Challenge#2
+
 Write a function that takes a positive integer, N, and returns the maximal product of a set of positive
 integers whose sum is N. Invalid inputs should return 0, that is non-positive integers or any integer where
 no set of at least 2 positive addends exists.
