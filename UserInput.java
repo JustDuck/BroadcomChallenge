@@ -1,5 +1,5 @@
 package com.BROADCOM.challengTwo;
-/***/
+
 import java.util.*;
 
 public class UserInput {
