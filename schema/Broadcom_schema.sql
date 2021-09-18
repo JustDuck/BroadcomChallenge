@@ -1,10 +1,10 @@
 -- phpMyAdmin SQL Dump
--- version 4.6.5.2
+-- version 5.6.26
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 19, 2018 at 09:57 PM
--- Server version: 10.1.21-MariaDB
+-- Generation Time: Sep 04, 2021 at 09:15 PM
+-- Server version: 5.6.26
 -- PHP Version: 5.6.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -133,4 +133,5 @@ FROM CUSTOMERS
 
 WHERE
 age>0 order by age;
+
 
