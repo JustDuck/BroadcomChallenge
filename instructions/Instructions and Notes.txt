@@ -1,0 +1,200 @@
+BroadcomChallenge
+
+The goal is:  To Code the Two Challenge Solutions
+
+Challenge#1
+
+Given:
+- 1M Users in a DB of your selection
+- User has the following attributes: {ID, Name, Age, Address 1, Address 2 }
+Implement a working API for a Web UI / Mobile App, that supports the following use cases:
+- Display all users in a table view (Name, Age)
+- Filter the users by last name and age
+- Sort by Name or Age
+Nonfunctional requirements:
+- Response time < 1sec
+Deliverable:
+- Fully functional API implemented using Java including source codes
+- A simple Web UI (Angular, React) demonstrating the use cases is a plus but not a must.
+- Source code preferable shared on GitHub.
+
+Challenge#2
+
+Write a function that takes a positive integer, N, and returns the maximal product of a set of positive
+integers whose sum is N. Invalid inputs should return 0, that is non-positive integers or any integer where
+no set of at least 2 positive addends exists.
+For example: Given 8, the result is 18
+8 can be written as 2+2+2+2 whose product is 16. However, it can also be written as 3+3+2 whose
+product is 18.
+
+Java
+-----------------
+
+1. Code the java class files need to complete Challenge#2
+
+2. Code the java class files need to complete Challenge#1
+
+3. Provide some form of testing e.g. dispayResultSet.jar
+
+
+SQL
+-----------------
+
+1.  Write MySQL query that Displays all users in a table view (Name, Age)
+
+2.  Write MySQL query that Filters the users by last name and age
+
+3.  Write MySQL query that Sorts by Name or Age
+ 	
+
+LOG Format
+-----------------
+
+none
+
+-----------------
+
+Deliverables
+------------
+
+1. Java program that can be run from command line
+	
+   java -jar dispayResultSet.jar"
+   
+2.  All war files that can be exploded into your java ee container
+
+    a.  RegistrationMVC.war
+
+	b.  sample.war
+
+3. Source Code for the Java program
+
+4. MySQL schema used for demonstrating both tables: user and customers:Broadcom_schema.sql
+
+5. SQL queries for SQL test ; see the output.sql file
+
+-----------------
+
+EXECUTION
+-----------------
+
+1. You will find an executable java file named dispayResultSet.jar for dispayResultSet.java.
+
+2. You could run -
+
+Go to the directory where the jar file is, turn on mysql and run the following:
+
+java -jar dispayResultSet.jar
+
+3. For Example:
+
+If using tomcat(an application server) explode the war files and browse to the links I have provided.
+
+Will supply the little start app.
+
+4. You may be asked for the MYSQL URL. 
+Enter - jdbc:mysql://localhost:3306. 
+Hoping MYSQL is installed on your local machine.
+
+5. Source code preferable shared on GitHub. Please see: https://github.com/JustDuck/BroadcomChallenge
+
+-----------------
+
+ADDITIONAL NOTES
+-----------------
+
+a.  Start Mysql via: net start MySQL.
+
+Or if you are using XAMMP point to location e.g.  C:\xampp\mysql\bin>mysql -u root
+
+b.  Start XAMPP.
+
+c.  Create a test database called broadcom.
+
+d.  Create two test tables, customers and user
+
+e.  Start eclipse and do a project named BROADCOM.
+
+For this project I used the following:
+
+	java version "1.8.0_111"
+	Java(TM) SE Runtime Environment (build 1.8.0_111-b14)
+	Java HotSpot(TM) Client VM (build 25.111-b14, mixed mode)
+
+	Eclipse Neon 4.6.3.M20170301-0400
+
+	mysql version is:
+	
+	MySQL Server 5.6
+
+	XAMPP Control Version 5.6.12 (ApacheFriends Edition)
+	
+	phpMyAdmin 4.4.14 / MySQL 5.6.26
+	
+	tomcat version apache-tomcat-7.0.100
+	
+	git version 2.33.0.windows.2
+
+
+If you are going to play around with the source I encourage you to 
+
+make sure that you place the two critical jars files at:
+
+E.g. -  X:\Java\jdk1.8.0_111\jre\lib\ext
+
+They are: mysql-connector.jar and mysql-connector-java-8.0.12.jar
+
+-----------------
+
+The preferred order of running is:
+
+a.  create a war file in eclipse.
+b.  install the war file into tomcat
+c.  turn on mysql
+d.  startup tomcat
+e.  browse to http://localhost:8080/
+    http://localhost:8080/sample 
+	http://localhost:8080/RegistrationMVC
+
+------------------------
+
+Some References are: 
+1.  https://krazytech.com/programs/java-registration-page-using-servlet-mysql-mvc
+2.  https://www.onlyxcodes.com/2018/02/java-mvc-login-and-register-script.html
+3.  https://stackoverflow.com/
+
+------------------------
+
+Issues encountered were:
+
+Tomcat apparently is not supported in various versions of eclipse
+
+Git is now requring a token.
+Please see:  https://stackoverflow.com/questions/68051054/github-personal-access-token-issues
+
+Am using: git version 2.33.0.windows.2
+
+I should never have attempted to create the two branches in the way that I did.
+One for Challenge#1 and a second for Challenge#2
+
+Where I could previously just upload files to my repository, does not work well anymore.
+
+------------------------
+
+Next steps considered:
+
+1. Create another jsp page that is to be added and accessed from Home.jsp.
+   It would serve to allow the user to add more records to the customer table.
+   
+2. Probably needs another servlet as well or some modification to the existing ones already in use.
+
+3. Revise the Register.jsp so it forces the user to comply with standard email format.
+
+4. Code a revised version of the existing RegistrationMVC application such that it creates the database 
+and two or three tables and then runs the revised application.
+
+------------------------
+
+These are the Instructions for the BroadcomChallenge interview
+
+------------------------
